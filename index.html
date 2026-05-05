@@ -226,8 +226,7 @@
        session held on the same day, in the same time slot. The number is colour-coded for quick
        scanning (deep red = strongly over-indexed, deep blue = strongly under-indexed) — this is the
        only place on the dashboard that uses colour. At the topic level (used for size on the map),
-       this is the <em>median</em> of the residuals across the topic's sessions, exponentiated — i.e.
-       the <code>median_session_attention_ratio</code> column in the companion Excel workbook.</p>
+       this is the <em>median</em> of the residuals across the topic's sessions, exponentiated.</p>
     <ul>
       <li><strong>1.00</strong> ≈ exactly as expected.</li>
       <li><strong>&gt; 1</strong> = more agenda-adds than expected (e.g. 1.50 = 50% more).</li>
@@ -310,8 +309,7 @@
       <li>Agenda-adds are not unique people. One person who adds three sessions counts three times.</li>
       <li>The baseline model is intentionally simple. It does not control for session format, room
         size, speaker prominence, or competing sessions in the same slot.</li>
-      <li>Topics with very few sessions (n &lt; 5) can swing wildly; treat their ratios with caution.
-        Companion Excel workbook flags these as <code>low_n</code>.</li>
+      <li>Topics with very few sessions (n &lt; 5) can swing wildly; treat their ratios with caution.</li>
       <li>This is exploratory, not causal.</li>
     </ul>
   </div>
